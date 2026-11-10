@@ -570,6 +570,16 @@ a {
 	gap: 10px;
 }
 
+.ai-note {
+	margin-top: 20px;
+	padding: 16px 20px;
+	border-left: 4px solid var(--accent);
+	border-radius: 12px;
+	font-size: 15px;
+	color: var(--text-muted);
+	background-color: var(--accent-soft);
+}
+
 .works-ai .work_img {
 	aspect-ratio: 16 / 10;
 	object-fit: cover;

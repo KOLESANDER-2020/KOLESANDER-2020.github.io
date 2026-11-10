@@ -787,18 +787,41 @@ a {
    ========================================================================== */
 
 @media (min-width: 1024px) {
+	:root {
+		--header-h: 104px;
+	}
+
 	.burger {
 		display: none;
 	}
 
+	/* language switcher sits in its own row above the menu, so the 7 links keep full size */
+	.header_inner {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-areas:
+			"logo lang"
+			"logo nav";
+		align-items: center;
+		row-gap: 6px;
+		column-gap: 24px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	.logo {
+		grid-area: logo;
+	}
+
 	.lang-switch {
-		order: 2;
+		grid-area: lang;
+		justify-self: end;
 		margin-left: 0;
 	}
 
 	.nav {
-		order: 1;
-		margin-left: auto;
+		grid-area: nav;
+		justify-self: end;
 		display: block;
 		position: static;
 		padding: 0;
@@ -826,6 +849,11 @@ a {
 	.nav_link-accent:hover {
 		color: #ffffff;
 		background-color: var(--accent-hover);
+	}
+
+	.nav_link,
+	.logo_name {
+		white-space: nowrap;
 	}
 
 	.work-wide {

@@ -1,10 +1,10 @@
 # Aleksandr Kolesnichenko — CV & Portfolio
 
-Personal CV / portfolio site of an Email Developer & front-end layout developer.
+Personal CV and portfolio site of an Email & HTML/CSS Developer.
 
 **Live:** https://kolesander-2020.github.io/ · [Українська](https://kolesander-2020.github.io/uk/) · [Русский](https://kolesander-2020.github.io/ru/)
 
-- Plain HTML5 + CSS + vanilla JavaScript — no frameworks, no build step. Open `index.html` locally or serve it from GitHub Pages.
+- Plain HTML5 + CSS + vanilla JavaScript — no frameworks, no build step. Serve the folder with any static server or from GitHub Pages (the language switcher links to folders, so it needs a server).
 - Mobile first (375 / 768 / 1280+), semantic markup, keyboard and screen-reader friendly.
 - Three language versions: English (`index.html`), Ukrainian (`uk/`) and Russian (`ru/`) with a switcher in the header and `hreflang` links.
 - `emails/` — hand-coded responsive HTML emails (table layout, MSO conditionals, VML for Outlook):
